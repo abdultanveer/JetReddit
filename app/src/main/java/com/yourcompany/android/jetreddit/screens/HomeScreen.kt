@@ -59,6 +59,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import com.yourcompany.android.jetreddit.R
 import com.yourcompany.android.jetreddit.components.ImagePost
+import com.yourcompany.android.jetreddit.components.JoinButton
 import com.yourcompany.android.jetreddit.components.JoinedToast
 import com.yourcompany.android.jetreddit.components.TextPost
 import com.yourcompany.android.jetreddit.domain.model.PostModel
@@ -212,6 +213,7 @@ private fun TrendingTopics(
           top = 8.dp,
           end = 16.dp
         ),
+
         content = {
           itemsIndexed(
             items = trendingTopics,
@@ -272,6 +274,7 @@ private fun mapHomeScreenItems(
 
   // Add Post items
   posts.forEach { post ->
+    //JoinButton()
     homeScreenItems.add(
       HomeScreenItem(HomeScreenItemType.POST, post)
     )
